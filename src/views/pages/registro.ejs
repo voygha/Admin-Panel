@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <%- include('../partials/login/head_login'); %>
+        <title>Document</title>
+</head>
+
+<body class="container"></body>
+
+<body>
+    <header>
+        <%- include('../partials/login/h_registrate'); %>
+    </header>
+    <div>
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <h3 class="text-center">Crear usuario</h3>
+                    <form action="/usuarios/user/add" method="POST">
+                        <div class="form-group">
+                            <label>Fullname</label>
+                            <input type="text" name="nombre" class="form-control" value="" required id="config" />
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" name="email" class="form-control" value="" required />
+                        </div>
+                        <div class="form-group">
+                            <label>Contraseña</label>
+                            <input type="password" name="password" class="form-control" value="" required />
+                        </div>
+                        <br />
+                        <div class="form-group">
+                            <a href=""><button class="boton">
+                    Registrar
+                  </button></a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <%- include('../partials/login/footer'); %>
+    </footer>
+</body>
+
+</html>

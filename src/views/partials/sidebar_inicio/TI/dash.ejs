@@ -1,0 +1,178 @@
+<div class="container">
+    <main>
+        <h1>Dashboard</h1>
+        <div class="date">
+            <input type="date" />
+        </div>
+        <!--    INIT INSIGHTS   -->
+        <div class="insights">
+            <!--  Init firts Card -->
+            <div class="sales">
+                <div class="middle">
+                    <div class="left">
+                        <h3>Colaboradores</h3>
+                        <h1>XXXXXXX Colaboradores</h1>
+                    </div>
+                    <div class="progress">
+                        <i class="bx bxs-user-detail"></i>
+                        <div class="number">
+                            <p>81%</p>
+                        </div>
+                    </div>
+                </div>
+                <small class="text-muted"> Last 24 Hrs </small>
+            </div>
+            <!--    End of firts Card   -->
+
+            <!--  Init Second Card -->
+            <div class="expenses">
+                <div class="middle">
+                    <div class="left">
+                        <h3>ZZZZZZZZ</h3>
+                        <h1>453 ZZZ Asignadas </h1>
+                    </div>
+                    <div class="progress">
+                        <i class="bx bx-wifi"></i>
+                        <div class="number">
+                            <p>100%</p>
+                        </div>
+                    </div>
+                </div>
+                <small class="text-muted"> Last 24 Hrs </small>
+            </div>
+            <!--    End of second Card   -->
+            <!--  Init three Card -->
+            <div class="income">
+                <div class="middle">
+                    <div class="left">
+                        <h3>Temas</h3>
+                        <h1>589 Temas</h1>
+                    </div>
+                    <div class="progress">
+                        <i class="bx bx-archive"></i>
+                        <div class="number">
+                            <p>81%</p>
+                        </div>
+                    </div>
+                </div>
+                <small class="text-muted"> Last 24 Hrs </small>
+            </div>
+            <!--    End of three Card   -->
+        </div>
+        <!--    END INSIGHTS   -->
+        <!--    INIT TABLE COLAB   -->
+        <div class="tabla_colab">
+            <h2>Personas</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Nombre Completo</th>
+                        <th>Area</th>
+                        <th>Puesto</th>
+                        <th>Correo</th>
+                        <th>Telefono</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ID 12455</td>
+                        <td>Pepe Villegas Camote</td>
+                        <td>Area ZZZZZZZZZ</td>
+                        <td>Puesto XXXXXXX</td>
+                        <td>ZZZZZZxxxAAA@gmail.com</td>
+                        <td>96145789110</td>
+                    </tr>
+                    <tr>
+                        <td>ID 12455</td>
+                        <td>Pepe Villegas Camote</td>
+                        <td>Area ZZZZZZZZZ</td>
+                        <td>Puesto XXXXXXX</td>
+                        <td>ZZZZZZxxxAAA@gmail.com</td>
+                        <td>96145789110</td>
+                    </tr>
+                    <tr>
+                        <td>ID 12455</td>
+                        <td>Pepe Villegas Camote</td>
+                        <td>Area ZZZZZZZZZ</td>
+                        <td>Puesto XXXXXXX</td>
+                        <td>ZZZZZZxxxAAA@gmail.com</td>
+                        <td>96145789110</td>
+                    </tr>
+                    <tr>
+                        <td>ID 12455</td>
+                        <td>Pepe Villegas Camote</td>
+                        <td>Area ZZZZZZZZZ</td>
+                        <td>Puesto XXXXXXX</td>
+                        <td>ZZZZZZxxxAAA@gmail.com</td>
+                        <td>96145789110</td>
+                    </tr>
+                </tbody>
+            </table>
+            <a href="#">Ver Detalle</a>
+        </div>
+        <!--    END TABLE COLAB   -->
+    </main>
+    <!--   ================================ END TABLE MAIN   ======================================== -->
+</div>
+<div class="container">
+    <div class="right">
+        <div class="top">
+            <button id="menu-btn">
+                <i class='bx bx-menu-alt-right'></i>
+            </button>
+            <div class="theme-toggler">
+                <i class='bx bx-sun active'></i>
+                <i class='bx bxs-moon'></i>
+            </div>
+            <div class="profile">
+                <div class="card" style="width: 8rem;">
+                    <div class="card-body">
+                        <div class="update">
+                            <p>Hey <b>Luis</b></p>
+                            <small class="text-muted">Admin Helow</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-photo">
+                    <img src="luis.jpeg" alt="">
+                </div>
+            </div>
+            <!--    END OF TOP   -->
+            <div class="recent-updates">
+                <div class="updates">
+                    <div class="card" style="width: 20rem;">
+                        <div class="card-body">
+                            <h2>Historial de Cambios</h2>
+                            <div class="update">
+                                <div class="profile-photo">
+                                    <img src="luis.jpeg" alt="">
+                                </div>
+                                <div class="message">
+                                    <p><b>Primeros Colaboradores</b> se subieron los datos de los primeros colaboradores</p>
+                                    <small class="text-muted">08/06/2022</small>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="update">
+                                <div class="profile-photo">
+                                    <img src="luis.jpeg" alt="">
+                                </div>
+                                <div class="message">
+                                    <p><b>Segundo Cambio</b> Se realizo un segundo cambio en la base de datos</p>
+                                    <small class="text-muted">09/06/2022</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function() {
+        $('#example').DataTable();
+    });
+</script>
